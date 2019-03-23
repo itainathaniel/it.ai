@@ -13,3 +13,4 @@
 
 Route::view('/', 'welcome');
 Route::view('zom', 'static.zom');
+Route::view('pikadon', 'static.pikadon');
