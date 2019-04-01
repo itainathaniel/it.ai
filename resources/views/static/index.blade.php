@@ -24,9 +24,8 @@
 	<div id="details">
 		<img src="http://it.ai/img/wed.jpg" alt="Itai Nathaniel" title="Itai Nathaniel" />
 		<ul id="bio">
-			<li class="job"><span class="title">Web Developer</span><span><br>@ examPAL</span></li>
-			<li class="school" style="display:none;">span class="title">Law Student</span> @ Ono Academic College</li>
-			<li class="hobbies">Web developer, driver, pilot, coffee drinker, snooker player</li>
+			<li class="job"><span class="title">Senior Developer</span><span><br>@ examPAL</span></li>
+			<li class="hobbies">Web developer, driver, pilot, pâtissier</li>
 		</ul>
 		<ul id="contact">
 			<li><a href="mailto:im@it.ai">im@it.ai</a><br /><a href="itainathaniel@gmail.com">itainathaniel@gmail.com</a></li>
