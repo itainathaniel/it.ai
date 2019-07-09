@@ -15,14 +15,14 @@
 	<meta name="twitter:url" content="https://it.ai">
 	<meta name="twitter:title" content="Itai Moses-Chai Nathaniel">
 	<meta name="twitter:description" content="Itai Nathaniel's personal website. He is a UX/UI designer, fullstack developer and a really nice guy all in all.">
-	<meta name="twitter:image" content="https://it.ai/img/profile_pic.png">
+	<meta name="twitter:image" content="{{ asset('images/profile_pic.png') }}">
 </head>
 <body>
 
 <div id="content">
 	<h1>Itai Nathaniel</h1>
 	<div id="details">
-		<img src="https://it.ai/img/profile_pic.png" alt="Itai Nathaniel" title="Itai Nathaniel" width="150" height="150">
+		<img src="{{ asset('images/profile_pic.png') }}" alt="Itai Nathaniel" title="Itai Nathaniel" width="150" height="150">
 		<ul id="bio">
 			<li class="job"><span class="title">Senior Developer</span><span><br>@ examPAL</span></li>
 			<li class="hobbies">Web developer, pilot, pâtissier</li>
