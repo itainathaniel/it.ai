@@ -4,31 +4,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"> 
  
 <head profile="http://gmpg.org/xfn/11"> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 	<title>Itai Nathaniel</title>
-	<link media="screen" href="reset.css" type="text/css" rel="stylesheet" />
-	<link media="screen" href="style.css" type="text/css" rel="stylesheet" />
+	<link media="screen" href="reset.css" type="text/css" rel="stylesheet">
+	<link media="screen" href="style.css" type="text/css" rel="stylesheet">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@itainathaniel">
 	<meta name="twitter:creator" content="@ItaiNathaniel">
 	<meta name="twitter:url" content="https://it.ai">
 	<meta name="twitter:title" content="Itai Moses-Chai Nathaniel">
-	<meta name="twitter:description" content="Itai Nathaniel is a student of life. He is a UX/UI designer, FED programmer and a really nice guy all in all.">
-	<meta name="twitter:image" content="https://it.ai/img/itai_grumpy_cat 3.jpg">
+	<meta name="twitter:description" content="Itai Nathaniel's personal website. He is a UX/UI designer, fullstack developer and a really nice guy all in all.">
+	<meta name="twitter:image" content="https://it.ai/img/profile_pic.png">
 </head>
 <body>
 
 <div id="content">
 	<h1>Itai Nathaniel</h1>
 	<div id="details">
-		<img src="https://it.ai/img/itai_grumpy_cat 3.jpg" alt="Itai Nathaniel" title="Itai Nathaniel" />
+		<img src="https://it.ai/img/profile_pic.png" alt="Itai Nathaniel" title="Itai Nathaniel" width="150" height="150">
 		<ul id="bio">
 			<li class="job"><span class="title">Senior Developer</span><span><br>@ examPAL</span></li>
 			<li class="hobbies">Web developer, pilot, pâtissier</li>
 		</ul>
 		<ul id="contact">
-			<li><a href="mailto:im@it.ai">im@it.ai</a><br /><a href="itainathaniel@gmail.com">itainathaniel@gmail.com</a></li>
+			<li><a href="mailto:im@it.ai">im@it.ai</a><br><a href="itainathaniel@gmail.com">itainathaniel@gmail.com</a></li>
 			<li>+972 (52) 3591891</li>
 			<li>26 Rambam st., Tel Aviv, Israel 65813</li>
 		</ul>
