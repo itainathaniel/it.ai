@@ -15,17 +15,17 @@
 	<meta name="twitter:url" content="https://it.ai">
 	<meta name="twitter:title" content="Itai Moses-Chai Nathaniel">
 	<meta name="twitter:description" content="Itai Nathaniel is a student of life. He is a UX/UI designer, FED programmer and a really nice guy all in all.">
-	<meta name="twitter:image" content="https://it.ai/img/wed.jpg">
+	<meta name="twitter:image" content="https://it.ai/img/itai_grumpy_cat 3.jpg">
 </head>
 <body>
 
 <div id="content">
 	<h1>Itai Nathaniel</h1>
 	<div id="details">
-		<img src="https://it.ai/img/wed.jpg" alt="Itai Nathaniel" title="Itai Nathaniel" />
+		<img src="https://it.ai/img/itai_grumpy_cat 3.jpg" alt="Itai Nathaniel" title="Itai Nathaniel" />
 		<ul id="bio">
 			<li class="job"><span class="title">Senior Developer</span><span><br>@ examPAL</span></li>
-			<li class="hobbies">Web developer, driver, pilot, pâtissier</li>
+			<li class="hobbies">Web developer, pilot, pâtissier</li>
 		</ul>
 		<ul id="contact">
 			<li><a href="mailto:im@it.ai">im@it.ai</a><br /><a href="itainathaniel@gmail.com">itainathaniel@gmail.com</a></li>
