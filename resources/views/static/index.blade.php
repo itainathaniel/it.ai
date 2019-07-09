@@ -12,17 +12,17 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@itainathaniel">
 	<meta name="twitter:creator" content="@ItaiNathaniel">
-	<meta name="twitter:url" content="http://it.ai">
+	<meta name="twitter:url" content="https://it.ai">
 	<meta name="twitter:title" content="Itai Moses-Chai Nathaniel">
 	<meta name="twitter:description" content="Itai Nathaniel is a student of life. He is a UX/UI designer, FED programmer and a really nice guy all in all.">
-	<meta name="twitter:image" content="http://it.ai/img/wed.jpg">
+	<meta name="twitter:image" content="https://it.ai/img/wed.jpg">
 </head>
 <body>
 
 <div id="content">
 	<h1>Itai Nathaniel</h1>
 	<div id="details">
-		<img src="http://it.ai/img/wed.jpg" alt="Itai Nathaniel" title="Itai Nathaniel" />
+		<img src="https://it.ai/img/wed.jpg" alt="Itai Nathaniel" title="Itai Nathaniel" />
 		<ul id="bio">
 			<li class="job"><span class="title">Senior Developer</span><span><br>@ examPAL</span></li>
 			<li class="hobbies">Web developer, driver, pilot, pâtissier</li>
@@ -34,17 +34,9 @@
 		</ul>
 	</div>
 	<ul id="social">
-		<li class="facebook"><a href="http://www.facebook.com/itainathaniel"><span>Facebook</span></a></li>
-		<li class="twitter"><a href="http://twitter.com/itainathaniel"><span>Twitter</span></a></li>
+		<li class="facebook"><a href="https://www.facebook.com/itainathaniel"><span>Facebook</span></a></li>
+		<li class="twitter"><a href="https://twitter.com/itainathaniel"><span>Twitter</span></a></li>
 		<li class="linkedin"><a href="http://il.linkedin.com/in/itainathaniel"><span>LinkedIn</span></a></li>
-		<li class="flickr"><a href="http://www.flickr.com/photos/26225424@N00/"><span>Flickr</span></a></li>
-		<li class="picasa"><a href="http://picasaweb.google.com/ItaiNathaniel/"><span>Picasa</span></a></li>
-		<li class="youtube"><a href="http://www.youtube.com/user/raful139"><span>YouTube</span></a></li>
-		<li class="buzz"><a href="http://www.google.com/profiles/ItaiNathaniel"><span>Google Buzz/Profile</span></a></li>
-		<li class="delicious"><a href="http://delicious.com/itainathaniel"><span>Delicious</span></a></li>
-		<!-- <li class="wordpress"><a href="http://www.raful.co.il/"><span>Wordpress Blog</span></a></li> -->
-		<!-- <li class="rss"><a href="http://www.raful.co.il/feed"><span>Blog RSS</span></a></li> -->
-		
 	</ul>
 </div>
 
