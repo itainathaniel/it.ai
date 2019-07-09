@@ -11,6 +11,7 @@
 |
 */
 
-Route::view('/', 'static.index');
+// Route::view('/', 'static.index');
+Route::view('/', 'index');
 Route::view('/zom', 'static.zom');
 Route::view('/pikadon', 'static.pikadon');
