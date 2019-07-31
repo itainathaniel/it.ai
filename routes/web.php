@@ -15,3 +15,7 @@
 Route::view('/', 'index');
 Route::view('/zom', 'static.zom');
 Route::view('/pikadon', 'static.pikadon');
+
+Route::get('blog', function() {
+    //
+});
