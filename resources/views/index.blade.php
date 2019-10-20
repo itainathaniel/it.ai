@@ -3,15 +3,16 @@
 <head>
 	<title>Itai Nathaniel</title>
 	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="bg-grey-lightest">
 
-<div class="container mx-auto flex text-center">
-	<div class="w-screen lg:w-2/5 mx-auto mt-4 p-4 text-4xl lg:text-sm bg-white rounded shadow-lg text-grey-darkest">
-		<img class="w-48 h-48 rounded-full my-6" src="{{ asset('images/profile_pic.png') }}" alt="Itai Nathaniel's avatar">
+<div class="container mx-auto flex text-center w-screen">
+	<div class="lg:w-2/5 mx-auto mt-4 p-4 text-2xl lg:text-sm bg-white rounded shadow-lg text-grey-darkest">
+		<img class="w-48 h-48 rounded-full my-6 inline" src="{{ asset('images/profile_pic.png') }}" alt="Itai Nathaniel's avatar">
 		<ul class="list-reset leading-loose">
 			<li class="leading-normal">
-				I'm <span class="text-5xl lg:text-xl">Itai Nathaniel</span>, a fullstack web developer (and also a pâtissier & a pilot) from Tel Aviv, Israel. I'm a senior developer in <a href="https://exampal.com">examPAL</a>, married to Chen and father to Ilil.
+				I'm <span class="font-bold">Itai Nathaniel</span>, a fullstack web developer (and also a pâtissier & a pilot) from Tel Aviv, Israel. I'm a senior developer in <a href="https://exampal.com">examPAL</a>, married to Chen and father to Ilil.
 			</li>
 			<li>
 				<a href="mailto:itainathaniel@gmail.com">itainathaniel@gmail.com</a> / <a href="mailto:im@it.ai">im@it.ai</a>
