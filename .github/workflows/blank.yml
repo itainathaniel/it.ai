@@ -1,0 +1,27 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+    - name: Install Composer dependencies
+      run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+    - name: Prepare the application
+      run: |
+        cp .env.example .env
+        php artisan key:generate
+    - name: Clear Config
+      run: php artisan config:clear     
+    - name: Run PHPUnit
+      run: vendor/bin/phpunit
