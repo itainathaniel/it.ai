@@ -49,6 +49,18 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ],
+        "test-integration": [
+            "vendor/bin/phpunit --group integration"
+        ],
+        "coverage": [
+            "vendor/bin/phpunit --exclude-group none --coverage-html public/coverage"
+        ],
+        "coverage-without-group-integration": [
+            "vendor/bin/phpunit --coverage-html public/coverage"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
