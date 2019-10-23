@@ -16,4 +16,10 @@ const mix = require('laravel-mix');
 mix.postCss('resources/css/style.css', 'public/css', [
   require('tailwindcss'),
 ])
+mix.sass('resources/sass/blog.sass', 'public/css')
+   .options({
+        postCss: [
+            require('tailwindcss'),
+        ]
+   });
 
