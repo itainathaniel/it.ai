@@ -27,14 +27,6 @@ Route::view('/pikadon', 'static.pikadon');
 // 		->name('blog.post');
 // });
 
-// Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::prefix('blog')->group(function () {
     Route::get('/', 'BlogController@index')->name('blog.index');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
