@@ -15,4 +15,22 @@
 Route::view('/', 'index');
 Route::view('/zom', 'static.zom');
 Route::view('/pikadon', 'static.pikadon');
-Route::get('blog', 'BlogController@index');
+
+// Wink
+// Route::group(['prefix' => 'blog'], function() {
+// 	Route::get('/', 'BlogController@index')->name('blog.index');
+// 	Route::get('page/{slug}', 'BlogController@page')->name('blog.page');
+// 	// Route::get('tag/{slug}', 'BlogController@tag')->name('blog.tag');
+// 	// Route::get('author/{slug}', 'BlogController@author')->name('blog.author');
+// 	Route::get('{year}/{month}/{slug}', 'BlogController@post')
+// 		->where(['year' => '[0-9]{4}', 'month' => '[0-9]{2}'])
+// 		->name('blog.post');
+// });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('blog')->group(function () {
+    Route::get('/', 'BlogController@index')->name('blog.index');
+});
