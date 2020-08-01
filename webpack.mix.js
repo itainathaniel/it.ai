@@ -1,36 +1,15 @@
 const mix = require('laravel-mix');
-const tailwindcss = require('tailwindcss')
-const glob = require('glob-all')
-const PurgecssPlugin = require('purgecss-webpack-plugin')
 
-class TailwindExtractor {
-    static extract(content) {
-        return content.match(/[A-z0-9-:\/]+/g)
-    }
-}
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
 
-mix.postCss('resources/css/style.css', 'public/css', [
-    require('tailwindcss'),
-])
-
-mix.postCss('resources/css/blog.css', 'public/css')
-   .options({
-        postCss: [
-            tailwindcss('tailwind.js'),
-        ]
-   });
-
-mix.webpackConfig({
-    plugins: [
-        new PurgecssPlugin({
-            paths: glob.sync([
-                path.join(__dirname, 'resources/views/**/*.blade.php'),
-                path.join(__dirname, 'resources/assets/js/**/*.vue')
-            ]),
-            extractors: [{
-                extractor: TailwindExtractor,
-                extensions: ['html', 'js', 'php', 'vue']
-            }]
-        })
-    ]
-});
+mix.js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css');
