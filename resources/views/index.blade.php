@@ -12,7 +12,7 @@
 		<img class="w-48 h-48 rounded-full my-6 inline" src="{{ asset('images/profile_pic.png') }}" alt="Itai Nathaniel's avatar">
 		<ul class="list-reset leading-loose">
 			<li class="leading-normal">
-				I'm <span class="font-bold">Itai Nathaniel</span>, a fullstack web developer (and also a pâtissier & a pilot) from Tel Aviv, Israel. I'm a senior developer in <a href="https://exampal.com">examPAL</a>, married to Chen and father to Ilil.
+				I'm <span class="font-bold">Itai Nathaniel</span>, a fullstack web developer (and also a pâtissier & a pilot) from Tel Aviv, Israel. I'm a senior backend developer in <a href="https://brainpop.com">BrainPOP</a>, married to Chen and father to Ilil, Aya & Arbel.
 			</li>
 			<li>
 				<a href="mailto:itainathaniel@gmail.com">itainathaniel@gmail.com</a> / <a href="mailto:im@it.ai">im@it.ai</a>
