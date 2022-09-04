@@ -11,8 +11,8 @@
         "php": "^8.1.9",
         "facade/ignition": "^2.0",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^7.0",
-        "laravel/telescope": "^3.5",
+        "laravel/framework": "^8.0",
+        "laravel/telescope": "^4.5",
         "laravel/tinker": "^2.0",
         "themsaid/wink": "^1.0"
     },
