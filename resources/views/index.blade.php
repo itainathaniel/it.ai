@@ -50,6 +50,11 @@
 					<img class="w-12 lg:w-6" src="{{ asset('images/icon_instagram.png') }}" alt="twitter">
 				</a>
 			</li>
+			<li class="px-4 lg:m-2">
+				<a rel="me" href="https://tooot.im/@itainathaniel">
+					<img class="w-12 lg:w-6" src="{{ asset('images/icon_twitter.png') }}" alt="mastodon">
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>
