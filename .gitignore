@@ -1,11 +1,7 @@
 /node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
+
+# Environment variables
 .env
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
+
+# Log files
 npm-debug.log
-yarn-error.log
