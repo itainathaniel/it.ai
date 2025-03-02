@@ -1,8 +1,6 @@
 import { JSX, useEffect, useState, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BsFillEnvelopeFill } from 'react-icons/bs';
-import { Helmet } from 'react-helmet';
-import profileImage from './images/itainathaniel.jpg';
 import { personalInfo, socialLinks, techStack } from './data/config';
 
 // Animation variants
@@ -15,7 +13,7 @@ const fadeInScale = {
 // Components
 const ProfileImage = () => (
   <motion.img
-    src={profileImage}
+    src='/itainathaniel.jpg'
     alt={personalInfo.name}
     className="w-40 h-40 rounded-full shadow-lg border-4 border-white hover:border-pink-200 transition-colors duration-1000"
     {...fadeInScale}
@@ -110,21 +108,6 @@ export default function App(): JSX.Element {
 
   return (
     <>
-      <Helmet>
-        <title>{`${personalInfo.name} | ${personalInfo.title}`}</title>
-        <meta
-          name="description"
-          content={`${personalInfo.name} - ${personalInfo.title}. ${personalInfo.family}. Based in ${personalInfo.location}.`}
-        />
-        <meta property="og:title" content={`${personalInfo.name} | ${personalInfo.title}`} />
-        <meta
-          property="og:description"
-          content={`${personalInfo.name} - ${personalInfo.title}. Working at ${personalInfo.work.company}.`}
-        />
-        <meta property="og:image" content={profileImage} />
-        <meta name="twitter:card" content="summary" />
-      </Helmet>
-
       <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-gray-900 px-4">
         <Suspense fallback={<div className="w-40 h-40 rounded-full bg-gray-200 animate-pulse" />}>
           <ProfileImage />
