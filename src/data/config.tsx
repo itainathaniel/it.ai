@@ -47,8 +47,11 @@ export const personalInfo = {
   name: 'Itai Nathaniel',
   title: 'Senior Developer | Pâtissier',
   location: 'Tel Aviv - Jaffa, Israel',
-  company: 'Amplication',
-  companyLink: 'https://amplication.com',
+  work: {
+    position: 'fullstack developer',
+    company: 'Amplication',
+    url: 'https://amplication.com',
+  },
   family: 'Married to Chen and father to Ilil, Aya & Arbel',
   contact: {
     emails: ['itainathaniel@gmail.com', 'im@it.ai'],

@@ -16,7 +16,14 @@ jest.mock('framer-motion', () => ({
       </h1>
     ),
     a: ({ children, ...props }: any) => <a {...props}>{children}</a>,
+    span: ({ children, ...props }: any) => <span {...props}>{children}</span>,
   },
+  AnimatePresence: ({ children }: any) => children,
+}));
+
+// Mock react-helmet
+jest.mock('react-helmet', () => ({
+  Helmet: ({ children }: any) => <>{children}</>,
 }));
 
 describe('App Component', () => {
@@ -30,9 +37,9 @@ describe('App Component', () => {
 
     test('renders company information with link', () => {
       render(<App />);
-      const companyLink = screen.getByRole('link', { name: personalInfo.company });
+      const companyLink = screen.getByRole('link', { name: personalInfo.work.company });
       expect(companyLink).toBeInTheDocument();
-      expect(companyLink).toHaveAttribute('href', personalInfo.companyLink);
+      expect(companyLink).toHaveAttribute('href', personalInfo.work.url);
       expect(companyLink).toHaveAttribute('target', '_blank');
       expect(companyLink).toHaveAttribute('rel', 'noopener noreferrer');
     });
@@ -46,7 +53,9 @@ describe('App Component', () => {
   describe('Contact Information', () => {
     test('renders email addresses', () => {
       render(<App />);
-      expect(screen.getByText(personalInfo.contact.emails.join(' / '))).toBeInTheDocument();
+      personalInfo.contact.emails.forEach(email => {
+        expect(screen.getByText(email)).toBeInTheDocument();
+      });
     });
 
     test('renders phone number', () => {
