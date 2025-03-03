@@ -41,6 +41,10 @@ export const techStack = [
   'Stripe',
   'PayPal',
   'Warp',
+  'Pizza',
+  'Beer',
+  'Vite',
+  'Next.js',
 ];
 
 export const personalInfo = {
