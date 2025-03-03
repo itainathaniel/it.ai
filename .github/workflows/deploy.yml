@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Forge Deployment
-        run: |
-          curl -X POST "https://forge.laravel.com/servers/301103/sites/2635918/deploy/http?token=${{ secrets.FORGE_DEPLOY_TOKEN }}"
+        run: curl -X POST https://forge.laravel.com/servers/301103/sites/2635918/deploy/http?token=${{ secrets.FORGE_DEPLOY_TOKEN }}
+        
