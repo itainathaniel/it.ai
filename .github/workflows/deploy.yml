@@ -1,28 +1,30 @@
-name: Deploy to Laravel Forge
+name: Deploy to Digital Ocean
 
 on:
   push:
     branches:
-      - main
+      - main  # Change to your deploy branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
+        uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install --frozen-lockfile
 
-      - name: Build
+      - name: Build the project
         run: npm run build
 
-      - name: Trigger Forge Deployment
-        run: curl -X POST https://forge.laravel.com/servers/301103/sites/2635918/deploy/http?token=${{ secrets.FORGE_DEPLOY_TOKEN }}
+      - name: Upload Build Files to Server
+        env:
+          HOST: ${{ vars.DO_SERVER_IP}}
+          USER: ${{ vars.DO_SSH_USER }}
+          SSH_KEY: ${{ secrets.DO_SSH_KEY }}
+        run: |
+          echo "$SSH_KEY" > private_key && chmod 600 private_key
+          rsync -avz -e "ssh -i private_key" ./dist/ $USER@$HOST:/home/forge/it.ai/
+          rm private_key
