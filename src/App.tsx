@@ -127,15 +127,28 @@ export default function App(): JSX.Element {
         <p className="mt-2 text-sm text-gray-500">{personalInfo.location}</p>
 
         <p className="mt-4 text-md text-gray-700 text-center">
-          I'm a {personalInfo.work.position} at{' '}
-          <a
-            href={personalInfo.work.url}
-            target="_blank"
+          I'm a {personalInfo.work.title}
+          {personalInfo.work.company && !personalInfo.work.url ? (
+            <>
+              at {personalInfo.work.company}
+            </>
+          ) : (
+            ''
+          )}
+          {personalInfo.work.url && personalInfo.work.company ? (
+            <>
+              at <a
+                href={personalInfo.work.url}
+                target="_blank"
             rel="noopener noreferrer"
             className="text-blue-800 hover:text-blue-600 transition-colors"
           >
-            {personalInfo.work.company}
-          </a>
+                {personalInfo.work.company}
+              </a>
+            </>
+          ) : (
+            ''
+          )}
         </p>
         <p className="text-md text-gray-700 text-center">{personalInfo.family}</p>
 

@@ -55,9 +55,9 @@ export const personalInfo = {
   title: 'Senior Developer | Pâtissier',
   location: 'Tel Aviv - Jaffa, Israel',
   work: {
-    position: 'fullstack developer',
-    company: 'Amplication',
-    url: 'https://amplication.com',
+    title: 'senior developer',
+    company: '',
+    url: '',
   },
   family: 'Married to Chen and father to Ilil, Aya & Arbel',
   contact: {
