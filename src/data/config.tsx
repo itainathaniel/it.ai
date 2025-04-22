@@ -56,8 +56,8 @@ export const personalInfo = {
   location: 'Tel Aviv - Jaffa, Israel',
   work: {
     title: 'senior developer',
-    company: '',
-    url: '',
+    company: 'Kidum',
+    url: 'https://kidum.com',
   },
   family: 'Married to Chen and father to Ilil, Aya & Arbel',
   contact: {
